@@ -1,4 +1,4 @@
-export class Telacel{
+export class Tc{
     id: number;
     urlImagem?: string;
     titulo?: string;
