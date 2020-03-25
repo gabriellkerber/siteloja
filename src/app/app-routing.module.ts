@@ -9,6 +9,7 @@ import { TelCelComponent } from './tel-cel/tel-cel.component';
 import { BateriaComponent } from './bateria/bateria.component';
 import { CoolerComponent } from './cooler/cooler.component';
 import { GabineteComponent } from './gabinete/gabinete.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'BATERIA', component: BateriaComponent },
   { path: 'COOLER', component: CoolerComponent },
   { path: 'GABINETE', component: GabineteComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

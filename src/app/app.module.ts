@@ -16,7 +16,8 @@ import { RamComponent } from './ram/ram.component';
 import { TelCelComponent } from './tel-cel/tel-cel.component';
 import { BateriaComponent } from './bateria/bateria.component';
 import { CoolerComponent } from './cooler/cooler.component';
-import { GabineteComponent } from './gabinete/gabinete.component'; 
+import { GabineteComponent } from './gabinete/gabinete.component';
+import { NotFoundComponent } from './not-found/not-found.component'; 
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { GabineteComponent } from './gabinete/gabinete.component';
     BateriaComponent,
     CoolerComponent,
     GabineteComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
