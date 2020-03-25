@@ -1,0 +1,38 @@
+<mat-toolbar>
+    <span>Tela Notebook</span>
+  </mat-toolbar>
+
+  <div class="flex row tns" *ngFor="let tn of tns">
+    <img [src]="tn.urlImagem">
+
+    <!-- <div class="espaco"></div> -->
+
+    <div class="grow flex column descricao-tn">
+
+      <div>
+        <h2>
+          {{ tn.titulo }}
+        </h2>
+        
+        <p>
+          {{ tn.descricaoCurta }}
+        </p>
+      </div>
+
+      <div class="grow"></div>
+
+      <div class="flex row">
+        <h3>
+          {{ tn.valor }}
+        </h3>
+        <div class="grow"></div>
+        <button mat-button>Ver Descrição<br>
+           Completa</button>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="espaco"></div> -->
+
+  </div>

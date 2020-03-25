@@ -1,0 +1,38 @@
+<mat-toolbar>
+    <span>SSD's</span>
+  </mat-toolbar>
+
+  <div class="flex row ssds" *ngFor="let ssd of ssds">
+    <img [src]="ssd.urlImagem">
+
+    <!-- <div class="espaco"></div> -->
+
+    <div class="grow flex column descricao-ssd">
+
+      <div>
+        <h2>
+          {{ ssd.titulo }}
+        </h2>
+        
+        <p>
+          {{ ssd.descricaoCurta }}
+        </p>
+      </div>
+
+      <div class="grow"></div>
+
+      <div class="flex row">
+        <h3>
+          {{ ssd.valor }}
+        </h3>
+        <div class="grow"></div>
+        <button mat-button>Ver Descrição<br>
+           Completa</button>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="espaco"></div> -->
+
+  </div>

@@ -1,17 +1,42 @@
 <html>
     <nav>
         <mat-toolbar>
-            <img src="assets/img/logo.png"  widht="80" height="80" alt="">
+            <img src="assets/img/logo.png"  widht="80" height="80" alt="Imagem não encontrada!" routerLink="/">
 
-            <button mat-button [matMenuTriggerFor]="menu">Notebooks</button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>Item 1</button>
-            <button mat-menu-item>Item 2</button>
+          <div class="meuMenu">
+          <button mat-button [matMenuTriggerFor]="Notebooks">Notebooks</button>
+
+          <mat-menu #Notebooks="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="Armazenamento">Armazenamento</button>
+            <button mat-menu-item routerLink="/TELANOTE">Tela</button>
+            <button mat-menu-item routerLink="/RAM">Memoria Ram</button>
           </mat-menu>
-            
+                
+          <mat-menu #Armazenamento="matMenu">
+            <button mat-menu-item routerLink="/SSD">SSD</button>
+            <button mat-menu-item routerLink="/HD">HD</button>
+          </mat-menu>
+
+
+          <button mat-button [matMenuTriggerFor]="Celulares">Celulares</button>
+
+          <mat-menu #Celulares="matMenu">
+            <button mat-menu-item routerLink="/TELACEL">Tela</button>
+            <button mat-menu-item routerLink="/BATERIA">Bateria</button>
+          </mat-menu>
+
+
+          <button mat-button [matMenuTriggerFor]="Acessorios">Acessórios</button>
+
+          <mat-menu #Acessorios="matMenu">
+            <button mat-menu-item routerLink="/COOLER">Coolers</button>
+            <button mat-menu-item routerLink="/GABINETE">Gabinete</button>
+          </mat-menu>
+          
+          </div>
+          <img src="assets/img/brasil.png" class="brasil" widht="50" height="50" alt="Imagem não encontrada!">
           </mat-toolbar>
-          
-          
+
     </nav>
-    <app-site></app-site>
+    <router-outlet></router-outlet>
 </html>
