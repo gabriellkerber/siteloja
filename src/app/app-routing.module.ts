@@ -14,7 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path:'SSD', component: SsdComponent},
-  {path: '', pathMatch: 'full', redirectTo: 'AppComponent' },
+  { path: '', redirectTo: 'AppComponent', pathMatch: 'full' },
   { path: 'HD', component: HdComponent },
   { path: 'TELANOTE', component: TelaNoteComponent },
   { path: 'RAM', component: RamComponent },
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'BATERIA', component: BateriaComponent },
   { path: 'COOLER', component: CoolerComponent },
   { path: 'GABINETE', component: GabineteComponent },
-  { path: '**', component: NotFoundComponent }
+ //* { path: '**', component: NotFoundComponent }*//
 ];
 
 @NgModule({
