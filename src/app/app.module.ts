@@ -9,28 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatButtonModule} from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { SsdComponent } from './ssd/ssd.component';
-import { HdComponent } from './hd/hd.component';
-import { TelaNoteComponent } from './tela-note/tela-note.component';
-import { RamComponent } from './ram/ram.component';
-import { TelCelComponent } from './tel-cel/tel-cel.component';
-import { BateriaComponent } from './bateria/bateria.component';
-import { CoolerComponent } from './cooler/cooler.component';
-import { GabineteComponent } from './gabinete/gabinete.component';
-import { NotFoundComponent } from './not-found/not-found.component'; 
+import { NotFoundComponent } from './not-found/not-found.component';
+import { CadastroComponent } from './cadastro/cadastro.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     SsdComponent,
-    HdComponent,
-    TelaNoteComponent,
-    RamComponent,
-    TelCelComponent,
-    BateriaComponent,
-    CoolerComponent,
-    GabineteComponent,
     NotFoundComponent,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +30,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

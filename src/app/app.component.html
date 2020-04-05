@@ -3,39 +3,15 @@
         <mat-toolbar>
             <img src="assets/img/logo.png"  widht="80" height="80" alt="Imagem não encontrada!" routerLink="">
 
-          <div class="meuMenu">
-          <button mat-button [matMenuTriggerFor]="Notebooks">Notebooks</button>
+        <div class="meuMenu">
 
-          <mat-menu #Notebooks="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="Armazenamento">Armazenamento</button>
-            <button mat-menu-item routerLink="/TELANOTE">Tela</button>
-            <button mat-menu-item routerLink="/RAM">Memoria Ram</button>
-          </mat-menu>
-                
-          <mat-menu #Armazenamento="matMenu">
-            <button mat-menu-item routerLink="/SSD">SSD</button>
-            <button mat-menu-item routerLink="/HD">HD</button>
-          </mat-menu>
-
-
-          <button mat-button [matMenuTriggerFor]="Celulares">Celulares</button>
-
-          <mat-menu #Celulares="matMenu">
-            <button mat-menu-item routerLink="/TELACEL">Tela</button>
-            <button mat-menu-item routerLink="/BATERIA">Bateria</button>
-          </mat-menu>
-
-
-          <button mat-button [matMenuTriggerFor]="Acessorios">Acessórios</button>
-
-          <mat-menu #Acessorios="matMenu">
-            <button mat-menu-item routerLink="/COOLER">Coolers</button>
-            <button mat-menu-item routerLink="/GABINETE">Gabinete</button>
-          </mat-menu>
-          
-          </div>
-          <img src="assets/img/brasil.png" class="brasil" widht="50" height="50" alt="Imagem não encontrada!">
-          </mat-toolbar>
+            <div class="Botoes">
+                <button mat-button routerLink="/Home" class="cad">Home</button>
+                <button mat-button routerLink="/Cadastro" class="cad">Cadastrar Produto</button>
+                <img src="assets/img/brasil.png" class="brasil" widht="50" height="50" alt="Imagem não encontrada!">
+            </div>
+        </div> 
+        </mat-toolbar>
 
     </nav>
     <router-outlet></router-outlet>

@@ -2,14 +2,21 @@ mat-toolbar{
     height: 100px;
     background-color: rgba(0, 38, 255, 0.747);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
     .meuMenu{
         margin: 20%;
     }
     button{
-        margin-left: 50px;
         color: white;
     }
-    .brasil{
-        margin-left: 150px;
+
+    .cad{
+        margin-left: 20px;
     }
 }
+    .brasil{
+        margin-left: 480px;
+    }
+    .Botoes{
+        margin-left: 110px;
+    }
