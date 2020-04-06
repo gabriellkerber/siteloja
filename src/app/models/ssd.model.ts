@@ -1,8 +1,8 @@
 export class Ssd{
     id: number;
-    urlImagem?: string;
+    url?: string;
     titulo?: string;
-    descricaoCurta?: string;
-    descricaoCompleta?: string;
+    descCurta?: string;
+    descCompleta?: string;
     valor: string;
 }

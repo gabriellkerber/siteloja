@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AppService } from './app.service';
+
 import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -12,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+
 import { SsdComponent } from './ssd/ssd.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CadastroComponent } from './cadastro/cadastro.component'; 
@@ -37,7 +40,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     ReactiveFormsModule
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AppService],
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

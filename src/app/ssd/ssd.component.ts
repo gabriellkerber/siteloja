@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Ssd } from '../models/ssd.model';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-ssd',
@@ -8,24 +9,12 @@ import { Ssd } from '../models/ssd.model';
 })
 export class SsdComponent implements OnInit {
 
-  ssds: Ssd[] = [];
-  descricao = "";
 
-  constructor() { }
+  constructor(public appService: AppService) { 
+    
+  }
 
   ngOnInit(): void {
-
-    this.ssds = [
-
-      {
-        id: 1,
-        urlImagem:'assets/img/ssdKing.jpg',
-        titulo:'SSD 120gb',
-        descricaoCurta: 'Solid State Drive 120Gb Kingston',
-        descricaoCompleta: '',
-        valor: 'R$ 300,00',
-      },
-    ]
   }
   
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AppService } from '../app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -17,13 +19,16 @@ export class CadastroComponent implements OnInit {
     tipo: new FormControl(null, Validators.required),
   });
 
-  constructor() { }
+
+  constructor(public appService: AppService, private router: Router) { }
 
   ngOnInit(): void {
   }
+    enviar(){
 
-  enviar(){
-    
+      this.appService.dados.push(this.cadastro.value);
+      this.router.navigateByUrl('Home');
+
+    }
+
   }
-
-}

@@ -2,8 +2,8 @@
     <span>Produtos</span>
   </mat-toolbar>
 
-  <div class="flex row ssds" *ngFor="let ssd of ssds">
-    <img [src]="ssd.urlImagem">
+  <div class="flex row ssds" *ngFor="let ssd of appService.dados">
+    <img [src]="ssd.url">
 
     <!-- <div class="espaco"></div> -->
 
@@ -15,7 +15,7 @@
         </h2>
         
         <p>
-          {{ ssd.descricaoCurta }}
+          {{ ssd.descCurta }}
         </p>
       </div>
 
@@ -23,7 +23,7 @@
 
       <div class="flex row">
         <h3>
-          {{ ssd.valor }}
+          R${{ ssd.valor }}
         </h3>
         <div class="grow"></div>
         <button mat-button>Ver Descrição<br>
@@ -32,7 +32,5 @@
       </div>
 
     </div>
-
-    <!-- <div class="espaco"></div> -->
 
   </div>
