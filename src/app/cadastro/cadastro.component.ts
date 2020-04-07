@@ -16,7 +16,6 @@ export class CadastroComponent implements OnInit {
     descCompleta: new FormControl(null, Validators.required),
     valor: new FormControl(null, Validators.required),
     url: new FormControl(null, Validators.required),
-    tipo: new FormControl(null, Validators.required),
   });
 
 
