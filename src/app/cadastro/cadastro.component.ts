@@ -25,9 +25,12 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
     enviar(){
-
-      this.appService.dados.push(this.cadastro.value);
+      if(this.cadastro.valid){
+        this.appService.dados.push(this.cadastro.value);
       this.router.navigateByUrl('Home');
+      }
+
+      
 
     }
 
