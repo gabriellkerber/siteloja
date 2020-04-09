@@ -2,7 +2,7 @@
     <span>Produtos</span>
   </mat-toolbar>
 
-  <div class="flex row ssds" *ngFor="let ssd of appService.dados">
+  <div class="flex row ssds" *ngFor="let ssd of appService.dados; let id = index">
     <img [src]="ssd.url">
 
     <!-- <div class="espaco"></div> -->
@@ -26,7 +26,7 @@
           R${{ ssd.valor }}
         </h3>
         <div class="grow"></div>
-        <button mat-button>Ver Descrição<br>
+        <button mat-button routerLink='/Detalhes/{{id}}'>Ver Descrição<br>
            Completa</button>
 
       </div>
